@@ -6,10 +6,19 @@
   <body>
     <button onclick="myfunction()">Execute JS function</button>
 
+    <h1>Passing Values/Variables to the parameter of a function</h1>
+    <p id="result"></p>
+
     <script>
       function myfunction() {
         document.write("My name is abir and ami Proggraming porasona kori na");
       }
+
+      function sum(x, y) {
+        return x + y;
+      }
+
+      document.getElementById("result").innerHTML = sum(15, 45);
     </script>
   </body>
 </html>
